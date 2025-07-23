@@ -1,0 +1,163 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #ededed;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background-color: rgba(10, 10, 10, 0.85);
+    padding: 1rem 2rem 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 25rem;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a0d500;
+    margin: 0;
+}
+
+.btn {
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.btn:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+
+.btn-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+
+.add-nodes-btn {
+    background: linear-gradient(to right, #3b82f6, #1d4ed8);
+    color: white;
+}
+
+.add-nodes-btn:hover {
+    background: linear-gradient(to right, #1d4ed8, #3b82f6);
+    color:  white;
+}
+
+.connect-nodes-btn {
+    background: linear-gradient(to right, #a855f7, #7e22ce);
+    color: white;
+}
+
+.connect-nodes-btn:hover {
+    background: linear-gradient(to right, #7e22ce, #a855f7);
+    color: white;
+}
+
+.run-btn {
+    background: linear-gradient(to right, #22c55e, #a0d500);
+    color: white;
+}
+
+.run-btn:hover {
+    background: linear-gradient(to right, #a0d500, #22c55e);
+    color: white;
+}
+
+.clear-btn {
+    background: linear-gradient(to right, #ec4899, #d946ef);
+    color: white;
+}
+
+.clear-btn:hover {
+    background: linear-gradient(to right, #d946ef, #ec4899);
+    color: white;
+}
+
+.undo-btn {
+    background: linear-gradient(to right, #6c757d, #495057);
+    color: white;
+}
+
+.undo-btn:hover {
+    background: linear-gradient(to right, #495057, #6c757d);
+    color: white;
+}
+
+.redo-btn {
+    background: linear-gradient(to right, #6c757d, #495057);
+    color: white;
+}
+
+.redo-btn:hover {
+    background: linear-gradient(to right, #495057, #6c757d);
+    color: white;
+}
+
+.info-container p {
+    margin: 0;
+}
+
+.info-container strong {
+    color: #60a5fa;
+}
+
+#start-node, #end-node {
+    font-weight: bold;
+}
+
+#start-node {
+    color: #84cc16;
+}
+
+#end-node {
+    color: #f472b6;
+}
+
+.delete-node-btn {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.delete-node-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
